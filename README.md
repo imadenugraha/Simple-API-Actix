@@ -23,8 +23,8 @@ A simple REST API service built with Actix Web framework in Rust. This service p
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url] 
-cd [your-project-name]
+git clone https://github.com/imadenugraha/Simple-API-Actix.git
+cd Simple-API-Actix
 ```
 
 2. Build the project:
