@@ -1036,14 +1036,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "service_a"
-version = "1.0.0"
-dependencies = [
- "actix-web",
- "serde",
-]
-
-[[package]]
 name = "sha1"
 version = "0.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1067,6 +1059,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9203b8055f63a2a00e2f593bb0510367fe707d7ff1e5c872de2f537b339e5410"
 dependencies = [
  "libc",
+]
+
+[[package]]
+name = "simple_api_actix"
+version = "1.0.0"
+dependencies = [
+ "actix-web",
+ "serde",
 ]
 
 [[package]]

@@ -1,7 +1,7 @@
 [package]
 description = "Simple API Service using Actix Web"
 authors = ["imadenugraha@gmail.com"]
-name = "service_a"
+name = "simple_api_actix"
 version = "1.0.0"
 edition = "2024"
 
