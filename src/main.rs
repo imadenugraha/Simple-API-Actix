@@ -1,4 +1,5 @@
 use actix_web::{get, web, App, Result, HttpServer, Responder};
+use actix_web::middleware::Logger;
 use serde::{Serialize, Deserialize};
 
 #[derive(Serialize)]
@@ -44,6 +45,7 @@ async fn up() -> Result<impl Responder> {
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
+            .wrap(Logger::default())
             .service(hello)
             .service(print_name)
             .service(up)
