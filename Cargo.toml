@@ -1,0 +1,14 @@
+[package]
+description = "Simple API Service using Actix Web"
+authors = ["imadenugraha@gmail.com"]
+name = "service_a"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.11.0"
+serde = { version = "1.0.219", features = ["derive"] }
+
+[dev-dependencies]
+actix-web = "4.11.0"
+serde = { version = "1.0.219", features = ["derive"] }
