@@ -25,6 +25,6 @@ EXPOSE 8000
 
 USER appuser
 
-HEALTHCHECK CMD --interval=1m curl --fail http://localhost:8000 || exit 1
+HEALTHCHECK CMD --interval=1m curl --fail http://localhost:8000/up || exit 1
 
 CMD ["./simple_api_actix"]
