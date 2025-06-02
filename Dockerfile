@@ -11,7 +11,8 @@ FROM debian:12-slim
 RUN adduser --shell /bin/sh --disabled-password appuser
 
 RUN apt-get update && \
-    apt-get install curl -y && \
+    apt-get upgrade -y && \
+    apt-get install curl --no-install--recommends -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/*
 
