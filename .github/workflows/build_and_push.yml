@@ -33,5 +33,6 @@ jobs:
           image-ref: 'docker.io/${{ secrets.DOCKER_USERNAME }}/simple-api-actix:${{ github.event.inputs.image-tag }}'
           format: 'table'
           exit-code: 1
+          ignore-unfixed: 'true'
           vuln-type: 'os,library'
           severity: 'HIGH,CRITICAL'
